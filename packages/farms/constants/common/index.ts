@@ -23,8 +23,8 @@ export const priceHelperTokens = {
 // for testing purposes
 export const DEFAULT_COMMON_PRICE: Record<ChainId, CommonPrice> = {
   [ChainId.ETHEREUM]: {},
-  [ChainId.GOERLI]: {
-    [goerliTestnetTokens.mockA.address]: '10',
+  [ChainId.PULSE_TESTNET]: {
+    [goerliTestnetTokens.usdc.address]: '1',
   },
   [ChainId.BSC]: {},
   [ChainId.BSC_TESTNET]: {

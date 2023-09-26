@@ -102,7 +102,7 @@ export const useFarmsV3 = () => {
     [chainId, 'cake-apr-tvl', farmV3.data],
     async () => {
       const tvls: TvlMap = {}
-      if ([ChainId.BSC, ChainId.GOERLI, ChainId.ETHEREUM, ChainId.BSC_TESTNET].includes(chainId)) {
+      if ([ChainId.BSC, ChainId.PULSE_TESTNET, ChainId.ETHEREUM, ChainId.BSC_TESTNET].includes(chainId)) {
         const results = await Promise.allSettled(
           farmV3.data.farmsWithPrice.map((f) =>
             fetch(`${FARMS_API}/v3/${chainId}/liquidity/${f.lpAddress}`)

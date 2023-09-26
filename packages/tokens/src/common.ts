@@ -44,12 +44,12 @@ export const USDC_ETH = new ERC20Token(
   'USD Coin',
 )
 
-export const USDC_GOERLI = new ERC20Token(
-  ChainId.GOERLI,
-  '0x07865c6E87B9F70255377e024ace6630C1Eaa37F',
+export const USDC_PULSE_TESTNET = new ERC20Token(
+  ChainId.PULSE_TESTNET,
+  '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
   6,
-  'tUSDC',
-  'test USD Coin',
+  'USDC',
+  'USD Coin',
 )
 
 export const USDT_BSC = new ERC20Token(
@@ -97,8 +97,8 @@ export const BUSD_ETH = new ERC20Token(
   'https://www.paxos.com/busd/',
 )
 
-export const BUSD_GOERLI = new ERC20Token(
-  ChainId.GOERLI,
+export const BUSD_PULSE_TESTNET = new ERC20Token(
+  ChainId.PULSE_TESTNET,
   '0xb809b9B2dc5e93CB863176Ea2D565425B03c0540',
   18,
   'BUSD',
@@ -108,7 +108,7 @@ export const BUSD_GOERLI = new ERC20Token(
 
 export const BUSD: Record<ChainId, ERC20Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
-  [ChainId.GOERLI]: BUSD_GOERLI,
+  [ChainId.PULSE_TESTNET]: BUSD_PULSE_TESTNET,
   [ChainId.BSC]: BUSD_BSC,
   [ChainId.BSC_TESTNET]: BUSD_TESTNET,
 }
@@ -122,8 +122,8 @@ export const CAKE = {
     'PancakeSwap Token',
     'https://pancakeswap.finance/',
   ),
-  [ChainId.GOERLI]: new ERC20Token(
-    ChainId.GOERLI,
+  [ChainId.PULSE_TESTNET]: new ERC20Token(
+    ChainId.PULSE_TESTNET,
     '0xc2C3eAbE0368a2Ea97f485b03D1098cdD7d0c081',
     18,
     'CAKE',
@@ -138,7 +138,7 @@ export const USDC = {
   [ChainId.BSC]: USDC_BSC,
   [ChainId.BSC_TESTNET]: USDC_TESTNET,
   [ChainId.ETHEREUM]: USDC_ETH,
-  [ChainId.GOERLI]: USDC_GOERLI,
+  [ChainId.PULSE_TESTNET]: USDC_PULSE_TESTNET,
 }
 
 export const USDT = {
@@ -156,7 +156,7 @@ export const WBTC_ETH = new ERC20Token(
 
 export const STABLE_COIN = {
   [ChainId.ETHEREUM]: USDT[ChainId.ETHEREUM],
-  [ChainId.GOERLI]: USDC[ChainId.GOERLI],
+  [ChainId.PULSE_TESTNET]: USDC[ChainId.PULSE_TESTNET],
   [ChainId.BSC]: USDT[ChainId.BSC],
   [ChainId.BSC_TESTNET]: BUSD[ChainId.BSC_TESTNET],
 } satisfies Record<ChainId, ERC20Token>

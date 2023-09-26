@@ -44,7 +44,7 @@ export abstract class Router {
             trade.route.path[2].address,
             trade.route.path[3].address,
           ])
-        case 5:
+        case 943:
           return routerSwapExactInputQuadruplehop(args, [
             trade.route.path[0].address,
             trade.route.path[1].address,
@@ -73,7 +73,7 @@ export abstract class Router {
             trade.route.path[2].address,
             trade.route.path[3].address,
           ])
-        case 5:
+        case 943:
           return routerSwapExactOutputQuadruplehop(args, [
             trade.route.path[0].address,
             trade.route.path[1].address,

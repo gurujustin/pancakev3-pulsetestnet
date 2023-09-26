@@ -14,8 +14,8 @@ import {
 } from './fetchFarmsV3'
 import { FarmConfigV3, FarmV3DataWithPrice } from './types'
 
-const supportedChainId = [ChainId.GOERLI, ChainId.BSC, ChainId.BSC_TESTNET, ChainId.ETHEREUM]
-const supportedChainIdV3 = [ChainId.GOERLI, ChainId.BSC, ChainId.BSC_TESTNET, ChainId.ETHEREUM]
+const supportedChainId = [ChainId.PULSE_TESTNET, ChainId.BSC, ChainId.BSC_TESTNET, ChainId.ETHEREUM]
+const supportedChainIdV3 = [ChainId.PULSE_TESTNET, ChainId.BSC, ChainId.BSC_TESTNET, ChainId.ETHEREUM]
 export const bCakeSupportedChainId = [ChainId.BSC]
 
 export function createFarmFetcher(multicallv2: MultiCallV2) {

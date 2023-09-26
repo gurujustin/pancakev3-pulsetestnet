@@ -14,7 +14,7 @@ import lpHelpers56 from '../constants/priceHelperLps/56'
 
 const chains = [
   [1, farm1, lpHelpers1],
-  [5, farm5, lpHelpers5],
+  [943, farm5, lpHelpers5],
   [56, farm56, lpHelpers56],
   [97, farm97, lpHelpers97],
 ]

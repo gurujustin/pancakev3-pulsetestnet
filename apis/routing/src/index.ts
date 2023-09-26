@@ -13,14 +13,14 @@ const router = Router()
 
 const CACHE_TIME = {
   [ChainId.ETHEREUM]: 10,
-  [ChainId.GOERLI]: 10,
+  [ChainId.PULSE_TESTNET]: 10,
   [ChainId.BSC]: 2,
   [ChainId.BSC_TESTNET]: 2,
 }
 
 const V3_SUBGRAPH_URLS = {
   [ChainId.ETHEREUM]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-eth',
-  [ChainId.GOERLI]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-goerli',
+  [ChainId.PULSE_TESTNET]: 'http://80.78.27.230:8000/subgraphs/name/pulsetestnet/exchange-v3-lite',
   [ChainId.BSC]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-bsc',
   [ChainId.BSC_TESTNET]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-chapel',
 }
@@ -29,7 +29,7 @@ const onChainQuoteProvider = SmartRouter.createQuoteProvider({ onChainProvider: 
 
 const v3Clients = {
   [ChainId.ETHEREUM]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.ETHEREUM], { fetch }),
-  [ChainId.GOERLI]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.GOERLI], { fetch }),
+  [ChainId.PULSE_TESTNET]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.PULSE_TESTNET], { fetch }),
   [ChainId.BSC]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.BSC], { fetch }),
   [ChainId.BSC_TESTNET]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.BSC_TESTNET], { fetch }),
 }
@@ -201,7 +201,7 @@ router.post('/v0/quote', async (req, event) => {
 
       response = json(serializeTrade(res), {
         headers: {
-          'Cache-Control': `public, s-maxage=${CACHE_TIME[chainId] ?? '5'}`,
+          'Cache-Control': `public, s-maxage=${CACHE_TIME[chainId] ?? '943'}`,
         },
       })
       event.waitUntil(cache.put(cacheKey, response.clone()))

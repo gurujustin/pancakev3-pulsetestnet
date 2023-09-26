@@ -16,12 +16,12 @@ export const bscTestnetProvider = new StaticJsonRpcProvider(
   97,
 )
 
-export const goerliProvider = new StaticJsonRpcProvider(
+export const pulseTestnetProvider = new StaticJsonRpcProvider(
   {
-    url: GOERLI_NODE,
+    url: PULSE_TESTNET_NODE,
     skipFetchSetup: true,
   },
-  5,
+  943,
 )
 
 export const ethProvider = new StaticJsonRpcProvider(

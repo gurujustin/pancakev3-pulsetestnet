@@ -24,7 +24,7 @@ crons = ["0 0 * * *", "*/1 * * * *"]
 
 # The necessary secrets are:
 # - ETH_NODE
-# - GOERLI_NODE
+# - PULSE_TESTNET_NODE
 # - BSC_NODE
 # - BSC_TESTNET_NODE
 # Run `echo <VALUE> | wrangler secret put <NAME>` for each of these

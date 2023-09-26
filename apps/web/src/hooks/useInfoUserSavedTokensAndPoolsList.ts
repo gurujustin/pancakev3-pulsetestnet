@@ -13,7 +13,7 @@ const defaultTokenAndPoolList: TokenAndPoolList = {
     tokens: [],
     pools: [],
   },
-  [ChainId.GOERLI]: {
+  [ChainId.PULSE_TESTNET]: {
     tokens: [],
     pools: [],
   },

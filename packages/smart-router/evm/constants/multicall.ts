@@ -45,7 +45,7 @@ export const BATCH_MULTICALL_CONFIGS: ChainMap<BatchMulticallConfigs> = {
       multicallChunk: 40,
     },
   },
-  [ChainId.GOERLI]: {
+  [ChainId.PULSE_TESTNET]: {
     defaultConfig: {
       multicallChunk: 150,
       gasLimitOverride: 1_000_000,

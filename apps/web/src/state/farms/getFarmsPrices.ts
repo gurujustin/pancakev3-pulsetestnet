@@ -127,7 +127,7 @@ const nativeStableLpMap = {
     wNative: 'WETH',
     stable: 'USDC',
   },
-  [ChainId.GOERLI]: {
+  [ChainId.PULSE_TESTNET]: {
     address: '0xf5bf0C34d3c428A74Ceb98d27d38d0036C587200',
     wNative: 'WETH',
     stable: 'tUSDC',

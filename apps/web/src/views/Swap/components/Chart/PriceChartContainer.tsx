@@ -46,6 +46,7 @@ const PriceChartContainer: React.FC<React.PropsWithChildren<PriceChartContainerP
     WNATIVE[inputCurrency.chainId].equals(inputCurrency.wrapped) &&
     WNATIVE[outputCurrency.chainId].equals(outputCurrency.wrapped)
 
+  console.log('debug5', isWrap)
   if (isWrap) {
     return <BnbWbnbNotice isDark={isDark} isChartExpanded={isChartExpanded} />
   }

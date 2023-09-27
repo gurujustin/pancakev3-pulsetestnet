@@ -7,9 +7,9 @@ import { getCakeVaultAddress } from 'utils/addressHelpers'
 import { getCakeContract } from 'utils/contractHelpers'
 import { getBlocksFromTimestamps } from 'utils/getBlocksFromTimestamps'
 import { bitQueryServerClient, infoServerClient } from 'utils/graphql'
-import Home from '../views/Home'
-import { SwapFeaturesProvider } from '../views/Swap/SwapFeaturesContext'
+// import Home from '../views/Home'
 import Swap from 'views/Swap'
+import { SwapFeaturesProvider } from '../views/Swap/SwapFeaturesContext'
 
 const IndexPage = ({ totalTx30Days, addressCount30Days, tvl }) => {
   return (

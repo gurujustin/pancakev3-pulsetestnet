@@ -65,7 +65,7 @@ export const StableContextProvider = (props: { pair: LPStablePair; account: stri
 enum FILTER {
   ALL = 0,
   V3 = 1,
-  STABLE = 2,
+  // STABLE = 2,
   V2 = 3,
 }
 
@@ -230,7 +230,7 @@ export default function PoolListPage() {
               >
                 <ButtonMenuItem>{t('All')}</ButtonMenuItem>
                 <ButtonMenuItem>V3</ButtonMenuItem>
-                <ButtonMenuItem>{t('StableSwap')}</ButtonMenuItem>
+                {/* <ButtonMenuItem>{t('StableSwap')}</ButtonMenuItem> */}
                 <ButtonMenuItem>V2</ButtonMenuItem>
               </ButtonMenu>
             </>

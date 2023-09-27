@@ -7,10 +7,10 @@ import { createPublicClient, http } from 'viem'
 const clients = CHAINS.reduce((prev, cur) => {
   return {
     ...prev,
-    [cur.id]: createPublicClient({
-      chain: cur,
-      transport: http(SERVER_NODES[cur.id]),
-    }),
+    // [cur.id]: createPublicClient({
+    //   chain: cur,
+    //   transport: http(SERVER_NODES[cur.id]),
+    // }),
   }
 }, {} as Record<ChainId, ReturnType<typeof createPublicClient>>)
 

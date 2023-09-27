@@ -8,20 +8,25 @@ import { getCakeContract } from 'utils/contractHelpers'
 import { getBlocksFromTimestamps } from 'utils/getBlocksFromTimestamps'
 import { bitQueryServerClient, infoServerClient } from 'utils/graphql'
 import Home from '../views/Home'
+import { SwapFeaturesProvider } from '../views/Swap/SwapFeaturesContext'
+import Swap from 'views/Swap'
 
 const IndexPage = ({ totalTx30Days, addressCount30Days, tvl }) => {
   return (
-    <SWRConfig
-      value={{
-        fallback: {
-          totalTx30Days,
-          addressCount30Days,
-          tvl,
-        },
-      }}
-    >
-      <Home />
-    </SWRConfig>
+    <SwapFeaturesProvider>
+      <Swap />
+    </SwapFeaturesProvider>
+    // <SWRConfig
+    //   value={{
+    //     fallback: {
+    //       totalTx30Days,
+    //       addressCount30Days,
+    //       tvl,
+    //     },
+    //   }}
+    // >
+    //   <Home />
+    // </SWRConfig>
   )
 }
 

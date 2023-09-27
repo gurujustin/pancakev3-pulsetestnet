@@ -29,6 +29,8 @@ export default function useAllV3TicksQuery(poolAddress: string | undefined, inte
     },
   )
 
+  console.log('debug3', data)
+
   return useMemo(
     () => ({
       error,

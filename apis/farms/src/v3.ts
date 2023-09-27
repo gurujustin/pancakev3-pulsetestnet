@@ -13,7 +13,7 @@ export const V3_SUBGRAPH_CLIENTS = {
   [ChainId.ETHEREUM]: new GraphQLClient('https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-eth', {
     fetch,
   }),
-  [ChainId.PULSE_TESTNET]: new GraphQLClient('http://80.78.27.230:8000/subgraphs/name/pulsetestnet/exchange-v3-lite', {
+  [ChainId.PULSE_TESTNET]: new GraphQLClient('http://80.78.27.230:8000/subgraphs/name/pulsetestnet/exchange-v3', {
     fetch,
   }),
   [ChainId.BSC]: new GraphQLClient('https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-bsc', { fetch }),

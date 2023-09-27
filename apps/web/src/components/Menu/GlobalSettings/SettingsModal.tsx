@@ -356,7 +356,7 @@ function RoutingSettings() {
               onChange={() => setV2Enable((s) => !s)}
             />
           </Flex>
-          <Flex justifyContent="space-between" alignItems="center" mb="24px">
+          {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
               <Text>PancakeSwap {t('StableSwap')}</Text>
               <QuestionHelper
@@ -382,7 +382,7 @@ function RoutingSettings() {
                 setIsStableSwapByDefault((s) => !s)
               }}
             />
-          </Flex>
+          </Flex> */}
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
               <Text>{`PancakeSwap ${t('MM Linked Pool')}`}</Text>

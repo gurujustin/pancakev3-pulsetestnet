@@ -32,7 +32,7 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
   }, [menuItems, pathname])
 
   const supportedMainnetChains = useMemo(
-    () => chains.filter((chain) => pageSupportedChains?.includes(chain.id)),
+    () => chains.filter((chain) => chain.id === 943 && pageSupportedChains?.includes(chain.id)),
     [chains, pageSupportedChains],
   )
 

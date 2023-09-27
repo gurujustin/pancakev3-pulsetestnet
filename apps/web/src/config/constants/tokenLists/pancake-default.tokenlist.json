@@ -132,7 +132,7 @@
     },
     {
       "name": "9mm Swap Token",
-      "symbol": "TEST",
+      "symbol": "CAKE",
       "address": "0x8f193Cd1c0e27967abbAa8Fd16EF0306f9174D20",
       "chainId": 943,
       "decimals": 18,

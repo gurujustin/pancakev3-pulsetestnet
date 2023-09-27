@@ -71,6 +71,7 @@ export function useSingleTokenSwapInfo(
 ): { [key: string]: number } {
   const token0Address = useMemo(() => getTokenAddress(inputCurrencyId), [inputCurrencyId])
   const token1Address = useMemo(() => getTokenAddress(outputCurrencyId), [outputCurrencyId])
+  console.log('debug6', token0Address, token1Address)
 
   const amount = useMemo(() => tryParseAmount('1', inputCurrency ?? undefined), [inputCurrency])
 
@@ -337,6 +338,8 @@ export const useFetchPairPricesV3 = ({
   )
 
   const hasSwapPrice = currentSwapPrice && currentSwapPrice[token0Address] > 0
+
+  console.log('debug5', currentSwapPrice)
   const normalizedDerivedPairDataWithCurrentSwapPrice = useMemo(
     () =>
       normalizedDerivedPairData?.length > 0 && hasSwapPrice

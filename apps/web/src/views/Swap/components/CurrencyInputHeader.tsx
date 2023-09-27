@@ -115,7 +115,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
               )}
             </ColoredIconButton>
           )}
-          <ColoredIconButton
+          {/* <ColoredIconButton
             variant="text"
             scale="sm"
             onClick={() => {
@@ -140,7 +140,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
                 {tooltipVisible && (!isMobile || mobileTooltipShow) && tooltip}
               </>
             )}
-          </ColoredIconButton>
+          </ColoredIconButton> */}
           <NotificationDot show={expertMode || isRoutingSettingChange}>
             <GlobalSettings color="textSubtle" mr="0" mode={SettingsMode.SWAP_LIQUIDITY} />
           </NotificationDot>

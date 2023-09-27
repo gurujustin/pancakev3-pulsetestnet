@@ -161,6 +161,8 @@ export default function FeeSelector({
     }
   }, [feeAmount, isLoading, isError, largestUsageFeeTier, handleFeePoolSelect, v2PairHasBetterTokenAmounts, farmV3])
 
+
+  console.log('debug4', currencyA, currencyB, v2PairHasBetterTokenAmounts, handleSelectV2 )
   return (
     <HideShowSelectorSection
       showOptions={showOptions || (!v2PairHasBetterTokenAmounts && isError)}
@@ -211,10 +213,6 @@ export default function FeeSelector({
           </SelectContainer>
           {currencyA && currencyB && v2PairHasBetterTokenAmounts && handleSelectV2 && (
             <AtomBox textAlign="center">
-              {/*
-                using state instead of replacing url to /v2 here
-                avoid pages keep in v2 when user change the tokens in selection
-              */}
               <Button variant="text" onClick={handleSelectV2}>
                 <Text color="textSubtle" bold>
                   {t('Add V2 Liquidity')}

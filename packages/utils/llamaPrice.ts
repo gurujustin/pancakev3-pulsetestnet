@@ -5,7 +5,7 @@ const CHAIN_MAPPING = {
   [ChainId.BSC]: 'bsc',
 } as const satisfies Record<number, string>
 
-// use for fetch usd outside of the liquidity pools on PancakeSwap
+// use for fetch usd outside of the liquidity pools on 9mm Swap
 export const fetchTokenUSDValue = async (chainId: number, tokenAddresses: string[]) => {
   if (!tokenAddresses.length || !CHAIN_MAPPING[chainId]) return new Map<string, string>()
 

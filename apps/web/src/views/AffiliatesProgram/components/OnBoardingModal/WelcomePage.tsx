@@ -36,13 +36,13 @@ const WelcomePage: React.FC<React.PropsWithChildren<WelcomePageProps>> = ({ isLo
       </Box>
       <Box>
         <Text fontSize={['24px']} bold m="12px 0">
-          {t('Welcome to PancakeSwap!')}
+          {t('Welcome to 9mm Swap!')}
         </Text>
         <Text textTransform="uppercase" color="secondary" bold mb="8px">
           {user?.toString()?.replaceAll('_', ' ')}
         </Text>
         <Text color="textSubtle" fontSize="14px" mb="24px">
-          {t('has referred you to start trading on PancakeSwap')}
+          {t('has referred you to start trading on 9mm Swap')}
         </Text>
         {isDiscountZero && noPerps ? null : (
           <Text color="textSubtle" mb="24px">

@@ -50,12 +50,12 @@ const whitelist = [
   'Sort Title A-Z',
   'Sort Title Z-A',
   'All articles',
-  'Learn basics of PancakeSwap',
+  'Learn basics of 9mm Swap',
   'Learn how',
   'You might also like',
   'Chef’s choice',
   'Recommended Readings by Chefs',
-  'Latest News about PancakeSwap and more!',
+  'Latest News about 9mm Swap and more!',
 ]
 
 describe.concurrent('Check translations integrity', () => {

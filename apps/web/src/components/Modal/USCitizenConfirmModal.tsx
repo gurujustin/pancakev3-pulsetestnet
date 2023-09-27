@@ -26,7 +26,7 @@ const USCitizenConfirmModal: React.FC<{ onDismiss?: () => void }> = ({ onDismiss
 
   return (
     <DisclaimerModal
-      modalHeader={t('PancakeSwap Perpetuals')}
+      modalHeader={t('9mm Swap Perpetuals')}
       id="disclaimer-perpetual-us-citizen"
       header={t('To proceed to Pancakeswap Perpetuals Trading, please check the checkbox below:')}
       checks={[

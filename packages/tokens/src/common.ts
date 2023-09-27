@@ -5,7 +5,7 @@ export const CAKE_MAINNET = new ERC20Token(
   '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
   18,
   'CAKE',
-  'PancakeSwap Token',
+  '9mm Swap Token',
   'https://pancakeswap.finance/',
 )
 
@@ -14,7 +14,7 @@ export const CAKE_TESTNET = new ERC20Token(
   '0xFa60D973F7642B748046464e165A65B7323b0DEE',
   18,
   'CAKE',
-  'PancakeSwap Token',
+  '9mm Swap Token',
   'https://pancakeswap.finance/',
 )
 
@@ -119,7 +119,7 @@ export const CAKE = {
     '0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898',
     18,
     'CAKE',
-    'PancakeSwap Token',
+    '9mm Swap Token',
     'https://pancakeswap.finance/',
   ),
   [ChainId.PULSE_TESTNET]: new ERC20Token(
@@ -127,7 +127,7 @@ export const CAKE = {
     '0xc2C3eAbE0368a2Ea97f485b03D1098cdD7d0c081',
     18,
     'CAKE',
-    'PancakeSwap Token',
+    '9mm Swap Token',
     'https://pancakeswap.finance/',
   ),
   [ChainId.BSC]: CAKE_MAINNET,

@@ -190,9 +190,9 @@ export default function PoolListPage() {
 
   return (
     <Page>
-      <Flex m="24px 0" maxWidth="854px">
+      {/* <Flex m="24px 0" maxWidth="854px">
         <FarmV3MigrationBanner />
-      </Flex>
+      </Flex> */}
       <AppBody
         style={{
           maxWidth: '854px',

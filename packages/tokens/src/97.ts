@@ -39,7 +39,7 @@ export const bscTestnetTokens = {
     '0x8d008B313C1d6C7fE2982F62d32Da7507cF43551',
     18,
     'CAKE2',
-    'PancakeSwap Token',
+    '9mm Swap Token',
     'https://pancakeswap.finance/',
   ),
 }

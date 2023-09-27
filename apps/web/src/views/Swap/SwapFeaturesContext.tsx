@@ -23,8 +23,8 @@ export const SwapFeaturesContext = createContext<{
 })
 
 const CHART_SUPPORT_CHAIN_IDS = [
-  ChainId.BSC,
-  ChainId.BSC_TESTNET,
+  // ChainId.BSC,
+  ChainId.PULSE_TESTNET,
   // ChainId.ETHEREUM
 ]
 const ACCESS_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.BSC]

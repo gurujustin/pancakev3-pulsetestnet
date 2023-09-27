@@ -114,7 +114,7 @@ const FarmV3MigrationBanner = () => {
         <S.LeftWrapper>
           <Flex flexDirection={['column', 'row']} mb={['8px', '8px', '12px']}>
             {isMobile && <LogoIcon mr={['auto', '8px']} width={24} height={24} />}
-            <Title>{isMobile ? t('PCS v3 Migration') : t('PancakeSwap v3 Migration')}</Title>
+            <Title>{isMobile ? t('PCS v3 Migration') : t('9mm Swap v3 Migration')}</Title>
           </Flex>
           <StyledBox>{t('Migrate to continue farming CAKE rewards and earning trading fees.')}</StyledBox>
           <Flex style={{ gap: 8 }} flexWrap={isMobile ? 'wrap' : 'nowrap'}>

@@ -34,7 +34,7 @@ export const injectedConnector = new InjectedConnector({
 export const coinbaseConnector = new CoinbaseWalletConnector({
   chains,
   options: {
-    appName: 'PancakeSwap',
+    appName: '9mm Swap',
     appLogoUrl: 'https://pancakeswap.com/logo.png',
   },
 })

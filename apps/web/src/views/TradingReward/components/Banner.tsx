@@ -88,7 +88,7 @@ const TradingRewardBanner = () => {
             </Text>
           </Text>
           <Text bold mb="32px" maxWidth="404px" lineHeight="26.4px" fontSize={['16px', '16px', '16px', '24px']}>
-            {t('Earn CAKE while trading your favorite tokens on PancakeSwap.')}
+            {t('Earn CAKE while trading your favorite tokens on 9mm Swap.')}
           </Text>
           <Flex>
             <Button>{t('Start Trading')}</Button>

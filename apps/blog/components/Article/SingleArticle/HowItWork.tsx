@@ -35,7 +35,7 @@ const HowItWork = () => {
               {t('How does it work?')}
             </Text>
             <Text bold fontSize={['24px', '24px', '40px']} m={['16px 0']} lineHeight="110%">
-              {t('Learn basics of PancakeSwap')}
+              {t('Learn basics of 9mm Swap')}
             </Text>
             <Text fontSize={['14px', '14px', '16px']} color="textSubtle">
               {t('Trade tokens, earn rewards and play to win!')}

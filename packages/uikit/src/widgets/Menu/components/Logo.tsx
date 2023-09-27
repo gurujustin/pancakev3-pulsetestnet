@@ -6,6 +6,7 @@ import { MenuContext } from "../context";
 
 interface Props {
   href: string;
+  isDark: boolean;
 }
 
 const blink = keyframes`
@@ -22,8 +23,8 @@ const StyledLink = styled("a")`
     }
   }
   .desktop-icon {
-    width: 160px;
-    display: none;
+    width: 45px;
+    // display: none;
     ${({ theme }) => theme.mediaQueries.lg} {
       display: block;
     }
@@ -41,13 +42,13 @@ const StyledLink = styled("a")`
   }
 `;
 
-const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
+const Logo: React.FC<React.PropsWithChildren<Props>> = ({ isDark, href }) => {
   const { linkComponent } = useContext(MenuContext);
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithTextIcon className="desktop-icon" />
+      {/* <LogoIcon className="mobile-icon" /> */}
+      <LogoWithTextIcon className="desktop-icon" isDark={isDark}/>
     </>
   );
 

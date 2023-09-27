@@ -38,7 +38,7 @@ const IntroSteps = [
     icon: '/images/affiliates-program/slider/3.png',
     description: (
       <Trans>
-        Earn CAKE tokens on most trades made on PancakeSwap. Stake for more rewards or use them in our Lottery and
+        Earn CAKE tokens on most trades made on 9mm Swap. Stake for more rewards or use them in our Lottery and
         Pottery
       </Trans>
     ),

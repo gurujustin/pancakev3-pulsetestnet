@@ -66,15 +66,15 @@ const pulseTestnetClient = createPublicClient({
 // @ts-ignore
 export const viemProviders: OnChainProvider = ({ chainId }: { chainId?: ChainId }) => {
   switch (chainId) {
-    case ChainId.ETHEREUM:
-      return mainnetClient
-    case ChainId.BSC:
-      return bscClient
-    case ChainId.BSC_TESTNET:
-      return bscTestnetClient
+    // case ChainId.ETHEREUM:
+    //   return mainnetClient
+    // case ChainId.BSC:
+    //   return bscClient
+    // case ChainId.BSC_TESTNET:
+    //   return bscTestnetClient
     case ChainId.PULSE_TESTNET:
       return pulseTestnetClient
     default:
-      return bscClient
+      return pulseTestnetClient
   }
 }

@@ -17,7 +17,7 @@ import ConnectWalletButton from 'components/ConnectWalletButton'
 import CurrencyInputPanel from 'components/CurrencyInputPanel'
 import { GELATO_NATIVE } from 'config/constants'
 import { LIMIT_ORDERS_DOCS_URL } from 'config/constants/exchange'
-import { SUPPORT_ONLY_BSC } from 'config/constants/supportChains'
+import { SUPPORT_ONLY_PULSE_TESTNET } from 'config/constants/supportChains'
 import useGasOverhead from 'hooks/limitOrders/useGasOverhead'
 import useGelatoLimitOrders from 'hooks/limitOrders/useGelatoLimitOrders'
 import { ApprovalState, useApproveCallbackFromInputCurrencyAmount } from 'hooks/useApproveCallback'
@@ -329,7 +329,7 @@ const LimitOrders = () => {
 
   const isSideFooter = isChartExpanded || isChartDisplayed
 
-  const isAccessTokenSupported = SUPPORT_ONLY_BSC.includes(chainId)
+  const isAccessTokenSupported = SUPPORT_ONLY_PULSE_TESTNET.includes(chainId)
 
   return (
     <Page

@@ -43,7 +43,7 @@ export function PageNetworkSupportModal() {
   return (
     <Modal title={title || t('Check your network')} hideCloseButton headerBackground="gradientCardHeader">
       <Grid style={{ gap: '16px' }} maxWidth="360px">
-        <Text bold>{t('It’s a BNB Smart Chain only feature')}</Text>
+        <Text bold>{t('It’s a PulseTestnet only feature')}</Text>
 
         {image && (
           <Box mx="auto" my="8px" position="relative" width="100%" minHeight="250px">
@@ -59,9 +59,9 @@ export function PageNetworkSupportModal() {
           <Button
             variant={foundChain && lastValidPath ? 'secondary' : 'primary'}
             isLoading={isLoading}
-            onClick={() => (isWrongNetwork ? switchNetworkLocal(ChainId.BSC) : switchNetworkAsync(ChainId.BSC))}
+            onClick={() => (isWrongNetwork ? switchNetworkLocal(ChainId.PULSE_TESTNET) : switchNetworkAsync(ChainId.PULSE_TESTNET))}
           >
-            {t('Switch to %chain%', { chain: 'BNB Smart Chain' })}
+            {t('Switch to %chain%', { chain: 'PulseTestnet' })}
           </Button>
         ) : (
           <Message variant="danger">

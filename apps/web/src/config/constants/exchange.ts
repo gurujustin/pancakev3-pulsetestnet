@@ -1,6 +1,6 @@
 import { ChainId, Percent, Token, WNATIVE } from '@pancakeswap/sdk'
 import { BigNumber } from '@ethersproject/bignumber'
-import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, WBTC_ETH } from '@pancakeswap/tokens'
+import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, WBTC_ETH, pulseTestnetTokens } from '@pancakeswap/tokens'
 import { ChainMap, ChainTokenList } from './types'
 
 export const CHAIN_REFRESH_TIME = {
@@ -20,7 +20,7 @@ export const ROUTER_ADDRESS: ChainMap<string> = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.ETHEREUM]: [WNATIVE[ChainId.ETHEREUM], USDC[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WBTC_ETH],
-  [ChainId.PULSE_TESTNET]: [WNATIVE[ChainId.PULSE_TESTNET], USDC[ChainId.PULSE_TESTNET], BUSD[ChainId.PULSE_TESTNET]],
+  [ChainId.PULSE_TESTNET]: [WNATIVE[ChainId.PULSE_TESTNET], USDC[ChainId.PULSE_TESTNET], pulseTestnetTokens.usdt],
   [ChainId.BSC]: [
     bscTokens.wbnb,
     bscTokens.cake,
@@ -58,7 +58,7 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], WBTC_ETH],
-  [ChainId.PULSE_TESTNET]: [USDC[ChainId.PULSE_TESTNET], WNATIVE[ChainId.PULSE_TESTNET], BUSD[ChainId.PULSE_TESTNET]],
+  [ChainId.PULSE_TESTNET]: [USDC[ChainId.PULSE_TESTNET], WNATIVE[ChainId.PULSE_TESTNET], pulseTestnetTokens.usdt],
   [ChainId.BSC]: [bscTokens.usdt, bscTokens.cake, bscTokens.btcb],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
@@ -66,7 +66,7 @@ export const SUGGESTED_BASES: ChainTokenList = {
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WBTC_ETH],
-  [ChainId.PULSE_TESTNET]: [USDC[ChainId.PULSE_TESTNET], WNATIVE[ChainId.PULSE_TESTNET], BUSD[ChainId.PULSE_TESTNET]],
+  [ChainId.PULSE_TESTNET]: [USDC[ChainId.PULSE_TESTNET], WNATIVE[ChainId.PULSE_TESTNET], pulseTestnetTokens.usdt],
   [ChainId.BSC]: [bscTokens.wbnb, bscTokens.dai, bscTokens.busd, bscTokens.usdt, bscTokens.cake],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }

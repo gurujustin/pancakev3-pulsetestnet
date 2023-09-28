@@ -176,7 +176,7 @@
       "symbol": "WPLS",
       "decimals": 18,
       "chainId": 943,
-      "logoURI": "https://tokens.pancakeswap.finance/images/symbol/weth.png"
+      "logoURI": "https://9mmv3-pulsetestnet.vercel.app/images/pls.svg"
     },
     {
       "name": "Wrapped Ether",

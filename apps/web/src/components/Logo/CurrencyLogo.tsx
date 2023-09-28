@@ -41,7 +41,7 @@ export default function CurrencyLogo({
   }, [currency, uriLocations])
 
   if (currency?.isNative) {
-    if (currency.chainId === ChainId.BSC) {
+    if (currency.chainId === ChainId.PULSE_TESTNET) {
       return <BinanceIcon width={size} style={style} />
     }
     return (

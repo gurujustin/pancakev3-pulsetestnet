@@ -94,8 +94,8 @@ export default function Swap() {
             setIsOpen={setIsChartDisplayed}
           />
         )}
-        {isDesktop && isSwapHotTokenDisplay && <HotTokenList handleOutputSelect={handleOutputSelect} />}
-        <ModalV2 isOpen={!isDesktop && isSwapHotTokenDisplay} onDismiss={() => setIsSwapHotTokenDisplay(false)}>
+        {/* {isDesktop && isSwapHotTokenDisplay && <HotTokenList handleOutputSelect={handleOutputSelect} />} */}
+        {/* <ModalV2 isOpen={!isDesktop && isSwapHotTokenDisplay} onDismiss={() => setIsSwapHotTokenDisplay(false)}>
           <Modal
             style={{ padding: 0 }}
             title={t('Top Token')}
@@ -109,7 +109,7 @@ export default function Swap() {
               }}
             />
           </Modal>
-        </ModalV2>
+        </ModalV2> */}
         <Flex flexDirection="column">
           <StyledSwapContainer $isChartExpanded={isChartExpanded}>
             <StyledInputCurrencyWrapper mt={isChartExpanded ? '24px' : '0'}>

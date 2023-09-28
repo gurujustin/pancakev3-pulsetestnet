@@ -222,7 +222,7 @@ export default function PoolListPage() {
                 </Text>
               </Flex>
 
-              <ButtonMenu
+              {/* <ButtonMenu
                 scale="sm"
                 activeIndex={selectedTypeIndex}
                 onItemClick={(index) => setSelectedTypeIndex(index)}
@@ -230,9 +230,9 @@ export default function PoolListPage() {
               >
                 <ButtonMenuItem>{t('All')}</ButtonMenuItem>
                 <ButtonMenuItem>V3</ButtonMenuItem>
-                {/* <ButtonMenuItem>{t('StableSwap')}</ButtonMenuItem> */}
+                <ButtonMenuItem>{t('StableSwap')}</ButtonMenuItem>
                 <ButtonMenuItem>V2</ButtonMenuItem>
-              </ButtonMenu>
+              </ButtonMenu> */}
             </>
           }
         />

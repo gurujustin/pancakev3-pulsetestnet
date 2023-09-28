@@ -230,14 +230,14 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
               <Flex alignItems="center">
                 <Text>{t('Flippy sounds')}</Text>
                 <QuestionHelper
-                  text={t('Fun sounds to make a truly immersive pancake-flipping trading experience')}
+                  text={t('Fun sounds to make a truly immersive 9mm-flipping trading experience')}
                   placement="top"
                   ml="4px"
                 />
               </Flex>
               <PancakeToggle checked={audioPlay} onChange={() => setAudioMode((s) => !s)} scale="md" />
             </Flex>
-            <RoutingSettingsButton />
+            {/* <RoutingSettingsButton /> */}
           </>
         )}
       </ScrollableContainer>
@@ -331,7 +331,7 @@ function RoutingSettings() {
               onChange={() => setV3Enable((s) => !s)}
             />
           </Flex>
-          <Flex justifyContent="space-between" alignItems="center" mb="24px">
+          {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
               <Text>9mm Swap V2</Text>
               <QuestionHelper
@@ -355,7 +355,7 @@ function RoutingSettings() {
               checked={v2Enable}
               onChange={() => setV2Enable((s) => !s)}
             />
-          </Flex>
+          </Flex> */}
           {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
               <Text>9mm Swap {t('StableSwap')}</Text>

@@ -209,8 +209,8 @@ export default function FeeSelector({
               return null
             })}
           </SelectContainer>
-          {currencyA && currencyB && 
-            // v2PairHasBetterTokenAmounts && 
+          {/* {currencyA && currencyB && 
+            v2PairHasBetterTokenAmounts && 
             handleSelectV2 && (
             <AtomBox textAlign="center">
               <Button variant="text" onClick={handleSelectV2}>
@@ -219,7 +219,7 @@ export default function FeeSelector({
                 </Text>
               </Button>
             </AtomBox>
-          )}
+          )} */}
         </>
       }
     />

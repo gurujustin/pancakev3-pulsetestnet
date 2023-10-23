@@ -60,9 +60,9 @@ export const useMenuItems = (onUsCitizenModalPresent?: () => void): ConfigMenuIt
             return { ...innerItem, onClick: onClickEvent }
           }
           if (isInfo) {
-            const itemMenuStatus = <LinkStatus>{ text: t('New'), color: 'success' }
+            // const itemMenuStatus = <LinkStatus>{ text: t('New'), color: 'success' }
             const href = `${innerItem.href}${multiChainPaths[chainId] ?? ''}`
-            return { ...innerItem, status: itemMenuStatus, href }
+            return { ...innerItem, href }
           }
 
           return innerItem

@@ -39,7 +39,7 @@ export const multiChainStartTime = {
 }
 
 export const multiChainId = {
-  BSC: ChainId.BSC,
+  PULSE: ChainId.PULSE_TESTNET,
   ETH: ChainId.ETHEREUM,
 }
 

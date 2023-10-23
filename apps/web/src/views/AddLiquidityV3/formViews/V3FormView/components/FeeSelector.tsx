@@ -16,6 +16,7 @@ import { HandleFeePoolSelectFn, SELECTOR_TYPE } from 'views/AddLiquidityV3/types
 import { FeeOption } from './FeeOption'
 import { FeeTierPercentageBadge } from './FeeTierPercentageBadge'
 import { FEE_AMOUNT_DETAIL, SelectContainer } from './shared'
+import { Console } from 'console'
 
 const FEE_TIERS = [FeeAmount.LOWEST, FeeAmount.LOW, FeeAmount.MEDIUM, FeeAmount.HIGH]
 
@@ -52,7 +53,7 @@ export default function FeeSelector({
     currencyA,
     currencyB,
   )
-
+    console.log('debug23', distributions)
   const [pairState, pair] = useV2Pair(currencyA, currencyB)
 
   const [showOptions, setShowOptions] = useState(false)

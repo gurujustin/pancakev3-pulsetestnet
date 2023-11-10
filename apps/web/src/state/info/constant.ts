@@ -14,12 +14,12 @@ import {
 
 export type MultiChainName = 'BSC' | 'ETH' | 'PULSE'
 
-export type MultiChainNameExtend = MultiChainName | 'BSC_TESTNET'
+export type MultiChainNameExtend = MultiChainName 
 
 export const multiChainName: Record<number | string, MultiChainNameExtend> = {
   [ChainId.BSC]: 'BSC',
   [ChainId.ETHEREUM]: 'ETH',
-  [ChainId.BSC_TESTNET]: 'BSC_TESTNET',
+  [ChainId.PULSE_MAINNET]: 'PULSE',
 }
 
 export const multiChainQueryMainToken = {

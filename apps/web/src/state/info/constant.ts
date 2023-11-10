@@ -12,7 +12,7 @@ import {
   ETH_TOKEN_WHITELIST,
 } from 'config/constants/info'
 
-export type MultiChainName = 'BSC' | 'ETH' | 'BSC_TESTNET'
+export type MultiChainName = 'BSC' | 'ETH' | 'PULSE'
 
 export type MultiChainNameExtend = MultiChainName | 'BSC_TESTNET'
 

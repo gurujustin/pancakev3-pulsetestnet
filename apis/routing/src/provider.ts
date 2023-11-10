@@ -3,7 +3,7 @@ import { OnChainProvider } from '@pancakeswap/smart-router/evm'
 import { createPublicClient, http } from 'viem'
 import { bsc, bscTestnet, goerli, mainnet } from 'wagmi/chains'
 
-const requireCheck = [ETH_NODE, PULSE_TESTNET_NODE, BSC_NODE, BSC_TESTNET_NODE]
+const requireCheck = [ETH_NODE, PULSE_MAINNET_NODE, BSC_NODE, BSC_TESTNET_NODE]
 requireCheck.forEach((node) => {
   if (!node) {
     throw new Error('Missing env var')
@@ -11,25 +11,25 @@ requireCheck.forEach((node) => {
 })
 
 const pulseTestnet = {
-  id: 943,
-  network: 'pulsechainV4',
-  name: 'PulseChain V4',
-  testnet: true,
-  nativeCurrency: { name: 'V4 Pulse', symbol: 'v4PLS', decimals: 18 },
+  id: 369,
+  network: 'pulsechain',
+  name: 'PulseChain',
+  testnet: false,
+  nativeCurrency: { name: 'Pulse', symbol: 'PLS', decimals: 18 },
   rpcUrls: {
     default: {
-      http: ['https://rpc.v4.testnet.pulsechain.com'],
-      webSocket: ['wss://ws.v4.testnet.pulsechain.com'],
+      http: ['https://rpc.pulsechain.com'],
+      webSocket: ['wss://ws.pulsechain.com'],
     },
     public: {
-      http: ['https://rpc.v4.testnet.pulsechain.com'],
-      webSocket: ['wss://ws.v4.testnet.pulsechain.com'],
+      http: ['https://rpc.pulsechain.com'],
+      webSocket: ['wss://ws.pulsechain.com'],
     },
   },
   blockExplorers: {
     default: {
       name: 'PulseScan',
-      url: 'https://scan.v4.testnet.pulsechain.com',
+      url: 'https://scan.pulsechain.com',
     },
   },
   contracts: {
@@ -37,7 +37,7 @@ const pulseTestnet = {
       address: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e',
     },
     multicall3: {
-      address: '0x4c5936F34BA40B40B461236d315992e6D118E042',
+      address: '0xca11bde05977b3631167028862be2a173976ca11',
       blockCreated: 14353601,
     },
   },
@@ -60,7 +60,7 @@ const bscTestnetClient = createPublicClient({
 
 const pulseTestnetClient = createPublicClient({
   chain: pulseTestnet,
-  transport: http(PULSE_TESTNET_NODE),
+  transport: http(PULSE_MAINNET_NODE),
 })
 
 // @ts-ignore
@@ -72,7 +72,7 @@ export const viemProviders: OnChainProvider = ({ chainId }: { chainId?: ChainId 
     //   return bscClient
     // case ChainId.BSC_TESTNET:
     //   return bscTestnetClient
-    case ChainId.PULSE_TESTNET:
+    case ChainId.PULSE_MAINNET:
       return pulseTestnetClient
     default:
       return pulseTestnetClient

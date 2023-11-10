@@ -6,7 +6,7 @@ export const NATIVE_CURRENCY_ADDRESS = getAddress('0xEeeeeEeeeEeEeeEeEeEeeEEEeee
 
 export const MM_SUPPORT_CHAIN = {
   1: true,
-  943: true,
+  369: true,
   56: true,
 }
 
@@ -24,13 +24,13 @@ export const MM_STABLE_TOKENS_WHITE_LIST: Record<number, Record<string, string>>
     '0x55d398326f99059fF775485246999027B3197955': 'USDT',
     '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d': 'USDC',
   },
-  [ChainId.PULSE_TESTNET]: {},
+  [ChainId.PULSE_MAINNET]: {},
 }
 
 export const MM_SIGNER = {
   [ChainId.BSC]: '0x2008b6c3D07B061A84F790C035c2f6dC11A0be70',
   [ChainId.ETHEREUM]: '0x2008b6c3D07B061A84F790C035c2f6dC11A0be70',
-  [ChainId.PULSE_TESTNET]: '0x13414B047539298D5aeD429722211681eAAb43B7',
+  [ChainId.PULSE_MAINNET]: '0x13414B047539298D5aeD429722211681eAAb43B7',
 }
 
 export const SAFE_MM_QUOTE_EXPIRY_SEC = 25

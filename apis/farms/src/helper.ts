@@ -10,7 +10,7 @@ export const getProvider = ({ chainId }: { chainId?: number }) => {
       return bscProvider
     case 97:
       return bscTestnetProvider
-    case 943:
+    case 369:
       return pulseTestnetProvider
     case 1:
       return ethProvider

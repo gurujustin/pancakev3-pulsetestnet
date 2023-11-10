@@ -24,8 +24,6 @@ function useTicksFromSubgraph(
       ? Pool.getAddress(currencyA?.wrapped, currencyB?.wrapped, feeAmount, undefined)
       : undefined
 
-      console.log('debug3', poolAddress)
-
   return useAllV3TicksQuery(poolAddress, 30000)
 }
 

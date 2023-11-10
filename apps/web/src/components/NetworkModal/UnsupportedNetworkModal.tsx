@@ -17,7 +17,7 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
   const { switchNetworkAsync, isLoading, canSwitch } = useSwitchNetwork()
   const switchNetworkLocal = useSwitchNetworkLocal()
   const { chains } = useNetwork()
-  const chainId = useLocalNetworkChain() || ChainId.PULSE_TESTNET
+  const chainId = useLocalNetworkChain() || ChainId.PULSE_MAINNET
   const { isConnected } = useAccount()
   const { logout } = useAuth()
   const { t } = useTranslation()
@@ -32,7 +32,7 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
   }, [menuItems, pathname])
 
   const supportedMainnetChains = useMemo(
-    () => chains.filter((chain) => chain.id === 943 && pageSupportedChains?.includes(chain.id)),
+    () => chains.filter((chain) => chain.id === 369 && pageSupportedChains?.includes(chain.id)),
     [chains, pageSupportedChains],
   )
 
@@ -62,7 +62,7 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
               if (supportedMainnetChains.map((c) => c.id).includes(chainId)) {
                 switchNetworkAsync(chainId)
               } else {
-                switchNetworkAsync(ChainId.PULSE_TESTNET)
+                switchNetworkAsync(ChainId.PULSE_MAINNET)
               }
             }}
           >
@@ -78,7 +78,7 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
             variant="secondary"
             onClick={() =>
               logout().then(() => {
-                switchNetworkLocal(ChainId.PULSE_TESTNET)
+                switchNetworkLocal(ChainId.PULSE_MAINNET)
               })
             }
           >

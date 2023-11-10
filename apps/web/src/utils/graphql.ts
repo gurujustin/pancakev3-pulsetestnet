@@ -35,7 +35,7 @@ export const infoClientWithChain = (chainId: number) => {
 
 export const v3Clients = {
   [ChainId.ETHEREUM]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.ETHEREUM]),
-  [ChainId.PULSE_TESTNET]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.PULSE_TESTNET]),
+  [ChainId.PULSE_MAINNET]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.PULSE_MAINNET]),
   [ChainId.BSC]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.BSC]),
   [ChainId.BSC_TESTNET]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.BSC_TESTNET]),
 }

@@ -344,7 +344,7 @@ export function useWBETHContract(withSignerIfPossible?: boolean): Contract | nul
   const { chainId } = useActiveChainId()
 
   const abi = useMemo(
-    () => ([ChainId.ETHEREUM, ChainId.PULSE_TESTNET].includes(chainId) ? WBETH_ETH_ABI : WBETH_BSC_ABI),
+    () => ([ChainId.ETHEREUM, ChainId.PULSE_MAINNET].includes(chainId) ? WBETH_ETH_ABI : WBETH_BSC_ABI),
     [chainId],
   )
 

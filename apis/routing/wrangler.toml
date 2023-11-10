@@ -16,7 +16,7 @@ name = "routing"
 # - AXIOM_TOKEN
 # The necessary secrets are:
 # - ETH_NODE
-# - PULSE_TESTNET_NODE
+# - PULSE_MAINNET_NODE
 # - BSC_NODE
 # - BSC_TESTNET_NODE
 # Run `echo <VALUE> | wrangler secret put <NAME>` for each of these

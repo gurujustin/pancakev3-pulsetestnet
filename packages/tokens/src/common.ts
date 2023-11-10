@@ -44,9 +44,9 @@ export const USDC_ETH = new ERC20Token(
   'USD Coin',
 )
 
-export const USDC_PULSE_TESTNET = new ERC20Token(
-  ChainId.PULSE_TESTNET,
-  '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+export const USDC_PULSE_MAINNET = new ERC20Token(
+  ChainId.PULSE_MAINNET,
+  '0x15D38573d2feeb82e7ad5187aB8c1D52810B1f07',
   6,
   'USDC',
   'USD Coin',
@@ -97,8 +97,8 @@ export const BUSD_ETH = new ERC20Token(
   'https://www.paxos.com/busd/',
 )
 
-export const BUSD_PULSE_TESTNET = new ERC20Token(
-  ChainId.PULSE_TESTNET,
+export const BUSD_PULSE_MAINNET = new ERC20Token(
+  ChainId.PULSE_MAINNET,
   '0xb809b9B2dc5e93CB863176Ea2D565425B03c0540',
   18,
   'BUSD',
@@ -108,7 +108,7 @@ export const BUSD_PULSE_TESTNET = new ERC20Token(
 
 export const BUSD: Record<ChainId, ERC20Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
-  [ChainId.PULSE_TESTNET]: BUSD_PULSE_TESTNET,
+  [ChainId.PULSE_MAINNET]: BUSD_PULSE_MAINNET,
   [ChainId.BSC]: BUSD_BSC,
   [ChainId.BSC_TESTNET]: BUSD_TESTNET,
 }
@@ -122,13 +122,13 @@ export const CAKE = {
     '9mm Swap Token',
     'https://pancakeswap.finance/',
   ),
-  [ChainId.PULSE_TESTNET]: new ERC20Token(
-    ChainId.PULSE_TESTNET,
-    '0xc2C3eAbE0368a2Ea97f485b03D1098cdD7d0c081',
-    18,
-    'CAKE',
-    '9mm Swap Token',
-    'https://pancakeswap.finance/',
+  [ChainId.PULSE_MAINNET]: new ERC20Token(
+    ChainId.PULSE_MAINNET,
+    '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+    6,
+    'USDC',
+    'USD Coin',
+    'https://tokens.pancakeswap.finance/images/symbol/usdc.png',
   ),
   [ChainId.BSC]: CAKE_MAINNET,
   [ChainId.BSC_TESTNET]: CAKE_TESTNET,
@@ -138,7 +138,7 @@ export const USDC = {
   [ChainId.BSC]: USDC_BSC,
   [ChainId.BSC_TESTNET]: USDC_TESTNET,
   [ChainId.ETHEREUM]: USDC_ETH,
-  [ChainId.PULSE_TESTNET]: USDC_PULSE_TESTNET,
+  [ChainId.PULSE_MAINNET]: USDC_PULSE_MAINNET,
 }
 
 export const USDT = {
@@ -156,7 +156,7 @@ export const WBTC_ETH = new ERC20Token(
 
 export const STABLE_COIN = {
   [ChainId.ETHEREUM]: USDT[ChainId.ETHEREUM],
-  [ChainId.PULSE_TESTNET]: USDC[ChainId.PULSE_TESTNET],
+  [ChainId.PULSE_MAINNET]: USDC[ChainId.PULSE_MAINNET],
   [ChainId.BSC]: USDT[ChainId.BSC],
   [ChainId.BSC_TESTNET]: BUSD[ChainId.BSC_TESTNET],
 } satisfies Record<ChainId, ERC20Token>

@@ -23,7 +23,7 @@ export const priceHelperTokens = {
 // for testing purposes
 export const DEFAULT_COMMON_PRICE: Record<ChainId, CommonPrice> = {
   [ChainId.ETHEREUM]: {},
-  [ChainId.PULSE_TESTNET]: {
+  [ChainId.PULSE_MAINNET]: {
     [pulseTestnetTokens.usdc.address]: '1',
   },
   [ChainId.BSC]: {},

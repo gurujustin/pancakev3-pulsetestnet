@@ -16,7 +16,7 @@ import { ContextApi } from '@pancakeswap/localization'
 import { SUPPORTED_CHAIN_IDS as POOL_SUPPORTED_CHAINS } from '@pancakeswap/pools'
 import { nftsBaseUrl } from 'views/Nft/market/constants'
 import { getPerpetualUrl } from 'utils/getPerpetualUrl'
-import { SUPPORT_ONLY_PULSE_TESTNET } from 'config/constants/supportChains'
+import { SUPPORT_ONLY_PULSE_MAINNET } from 'config/constants/supportChains'
 
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & { hideSubNav?: boolean }
 export type ConfigMenuItemsType = Omit<MenuItemsType, 'items'> & { hideSubNav?: boolean; image?: string } & {
@@ -76,7 +76,7 @@ const config: (
         // {
         //   label: `${t('Limit')} (V2)`,
         //   href: '/limit-orders',
-        //   supportChainIds: SUPPORT_ONLY_PULSE_TESTNET,
+        //   supportChainIds: SUPPORT_ONLY_PULSE_MAINNET,
         //   image: '/images/decorations/3d-coin.png',
         // },
       ].map((item) => addMenuItemSupported(item, chainId)),
@@ -109,7 +109,7 @@ const config: (
     //   href: '/prediction',
     //   icon: TrophyIcon,
     //   fillIcon: TrophyFillIcon,
-    //   supportChainIds: SUPPORT_ONLY_PULSE_TESTNET,
+    //   supportChainIds: SUPPORT_ONLY_PULSE_MAINNET,
     //   items: [
     //     {
     //       label: t('Trading Competition'),
@@ -139,7 +139,7 @@ const config: (
     //   href: `${nftsBaseUrl}`,
     //   icon: NftIcon,
     //   fillIcon: NftFillIcon,
-    //   supportChainIds: SUPPORT_ONLY_PULSE_TESTNET,
+    //   supportChainIds: SUPPORT_ONLY_PULSE_MAINNET,
     //   image: '/images/decorations/nft.png',
     //   items: [
     //     {
@@ -169,7 +169,7 @@ const config: (
         // {
         //   label: t('IFO'),
         //   href: '/ifo',
-        //   supportChainIds: SUPPORT_ONLY_PULSE_TESTNET,
+        //   supportChainIds: SUPPORT_ONLY_PULSE_MAINNET,
         //   image: '/images/ifos/ifo-bunny.png',
         // },
         // {
@@ -179,7 +179,7 @@ const config: (
         // {
         //   label: t('Voting'),
         //   href: '/voting',
-        //   supportChainIds: SUPPORT_ONLY_PULSE_TESTNET,
+        //   supportChainIds: SUPPORT_ONLY_PULSE_MAINNET,
         //   image: '/images/voting/voting-bunny.png',
         // },
         // {
@@ -188,7 +188,7 @@ const config: (
         // {
         //   label: t('Leaderboard'),
         //   href: '/teams',
-        //   supportChainIds: SUPPORT_ONLY_PULSE_TESTNET,
+        //   supportChainIds: SUPPORT_ONLY_PULSE_MAINNET,
         //   image: '/images/decorations/leaderboard.png',
         // },
         // {

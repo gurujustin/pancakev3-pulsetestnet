@@ -4,8 +4,8 @@ export const BSC_RPC_URLS = [
   'https://bsc-dataseed.binance.org',
 ]
 
-export const PULSE_TESTNET_RPC_URLS = [
-  'https://rpc.v4.testnet.pulsechain.com/',
-  'https://rpc.v4.testnet.pulsechain.com/',
-  'https://rpc.v4.testnet.pulsechain.com/',
+export const PULSE_MAINNET_RPC_URLS = [
+  'https://rpc.pulsechain.com',
+  'https://rpc.pulsechain.com',
+  'https://rpc.pulsechain.com',
 ]

@@ -10,7 +10,7 @@ import { masterChefV3Addresses } from '@pancakeswap/farms'
 import { V3_SUBGRAPH_URLS } from 'config/constants/endpoints'
 import { multicallv3 } from 'utils/multicall.server'
 
-const zChainId = zEnum(['56', '1', '943', '97'])
+const zChainId = zEnum(['56', '1', '369', '97'])
 
 const zAddress = zString().regex(/^0x[a-fA-F0-9]{40}$/)
 

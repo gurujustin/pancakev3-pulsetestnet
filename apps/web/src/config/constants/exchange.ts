@@ -5,14 +5,14 @@ import { ChainMap, ChainTokenList } from './types'
 
 export const CHAIN_REFRESH_TIME = {
   [ChainId.ETHEREUM]: 12_000,
-  [ChainId.PULSE_TESTNET]: 12_000,
+  [ChainId.PULSE_MAINNET]: 12_000,
   [ChainId.BSC]: 6_000,
   [ChainId.BSC_TESTNET]: 6_000,
 } as const satisfies Record<ChainId, number>
 
 export const ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.ETHEREUM]: '0xEfF92A263d31888d860bD50809A8D171709b7b1c',
-  [ChainId.PULSE_TESTNET]: '0x8121be583C5cCD655C4ee9a0378fd02AdeFa000B',
+  [ChainId.PULSE_MAINNET]: '0x8121be583C5cCD655C4ee9a0378fd02AdeFa000B',
   [ChainId.BSC]: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
   [ChainId.BSC_TESTNET]: '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
 }
@@ -20,7 +20,7 @@ export const ROUTER_ADDRESS: ChainMap<string> = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.ETHEREUM]: [WNATIVE[ChainId.ETHEREUM], USDC[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WBTC_ETH],
-  [ChainId.PULSE_TESTNET]: [WNATIVE[ChainId.PULSE_TESTNET], USDC[ChainId.PULSE_TESTNET], pulseTestnetTokens.usdt],
+  [ChainId.PULSE_MAINNET]: [WNATIVE[ChainId.PULSE_MAINNET], USDC[ChainId.PULSE_MAINNET], pulseTestnetTokens.usdt],
   [ChainId.BSC]: [
     bscTokens.wbnb,
     bscTokens.cake,
@@ -58,7 +58,7 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], WBTC_ETH],
-  [ChainId.PULSE_TESTNET]: [USDC[ChainId.PULSE_TESTNET], WNATIVE[ChainId.PULSE_TESTNET], pulseTestnetTokens.usdt],
+  [ChainId.PULSE_MAINNET]: [USDC[ChainId.PULSE_MAINNET], WNATIVE[ChainId.PULSE_MAINNET], pulseTestnetTokens.usdt],
   [ChainId.BSC]: [bscTokens.usdt, bscTokens.cake, bscTokens.btcb],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
@@ -66,7 +66,7 @@ export const SUGGESTED_BASES: ChainTokenList = {
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WBTC_ETH],
-  [ChainId.PULSE_TESTNET]: [USDC[ChainId.PULSE_TESTNET], WNATIVE[ChainId.PULSE_TESTNET], pulseTestnetTokens.usdt],
+  [ChainId.PULSE_MAINNET]: [USDC[ChainId.PULSE_MAINNET], WNATIVE[ChainId.PULSE_MAINNET], pulseTestnetTokens.usdt],
   [ChainId.BSC]: [bscTokens.wbnb, bscTokens.dai, bscTokens.busd, bscTokens.usdt, bscTokens.cake],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
@@ -110,9 +110,9 @@ export const BASE_FEE = new Percent(25n, BIPS_BASE)
 export const INPUT_FRACTION_AFTER_FEE = ONE_HUNDRED_PERCENT.subtract(BASE_FEE)
 
 // BNB
-export const DEFAULT_INPUT_CURRENCY = 'BNB'
+export const DEFAULT_INPUT_CURRENCY = 'PLS'
 // CAKE
-export const DEFAULT_OUTPUT_CURRENCY = '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82'
+export const DEFAULT_OUTPUT_CURRENCY = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
 
 // Handler string is passed to Gelato to use PCS router
 export const GELATO_HANDLER = 'pancakeswap'

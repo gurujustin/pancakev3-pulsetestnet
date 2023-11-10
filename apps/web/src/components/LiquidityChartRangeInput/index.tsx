@@ -64,8 +64,6 @@ export default function LiquidityChartRangeInput({
     feeAmount,
   })
 
-  console.log('debug1', isLoading, error, formattedData)
-
   const onBrushDomainChangeEnded = useCallback(
     (domain: [number, number], mode: string | undefined) => {
       let leftRangeValue = Number(domain[0])

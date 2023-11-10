@@ -34,7 +34,7 @@ function parseCallStates(states: CallState[]) {
       case 4:
         feeNumerator = result && BigInt(result[0].toString())
         break
-      case 943:
+      case 369:
         feeDenominator = result && BigInt(result[0].toString())
         break
       default:

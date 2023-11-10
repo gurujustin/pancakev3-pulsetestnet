@@ -8,8 +8,8 @@ export const getNodeRealUrl = (networkName: string) => {
       }
       break
     case 'goerli':
-      if (process.env.NEXT_PUBLIC_NODE_REAL_API_PULSE_TESTNET) {
-        host = `eth-goerli.nodereal.io/v1/${process.env.NEXT_PUBLIC_NODE_REAL_API_PULSE_TESTNET}`
+      if (process.env.NEXT_PUBLIC_NODE_REAL_API_PULSE_MAINNET) {
+        host = `eth-goerli.nodereal.io/v1/${process.env.NEXT_PUBLIC_NODE_REAL_API_PULSE_MAINNET}`
       }
       break
     default:
@@ -36,7 +36,7 @@ export const getNodeRealUrlV2 = (chainId: number, key?: string) => {
         host = `eth-mainnet.nodereal.io/v1/${key}`
       }
       break
-    case 943:
+    case 369:
       if (key) {
         host = `eth-goerli.nodereal.io/v1/${key}`
       }

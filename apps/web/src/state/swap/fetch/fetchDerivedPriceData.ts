@@ -30,10 +30,10 @@ const SWAP_INFO_BY_CHAIN = {
   [ChainId.BSC_TESTNET]: {
     v3: V3_SUBGRAPH_URLS[ChainId.BSC_TESTNET],
   },
-  [ChainId.PULSE_TESTNET]: {
+  [ChainId.PULSE_MAINNET]: {
     // v2: INFO_CLIENT,
     // stable: STABLESWAP_SUBGRAPH_CLIENT,
-    v3: V3_SUBGRAPH_URLS[ChainId.PULSE_TESTNET],
+    v3: V3_SUBGRAPH_URLS[ChainId.PULSE_MAINNET],
   },
 } satisfies Record<ChainId, Partial<ProtocolEndpoint>>
 

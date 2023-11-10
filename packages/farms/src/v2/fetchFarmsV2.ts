@@ -15,7 +15,7 @@ const evmNativeStableLpMap = {
     wNative: 'WETH',
     stable: 'USDC',
   },
-  [ChainId.PULSE_TESTNET]: {
+  [ChainId.PULSE_MAINNET]: {
     address: '0xf5bf0C34d3c428A74Ceb98d27d38d0036C587200',
     wNative: 'WETH',
     stable: 'tUSDC',

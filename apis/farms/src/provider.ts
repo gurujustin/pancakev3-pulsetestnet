@@ -18,10 +18,10 @@ export const bscTestnetProvider = new StaticJsonRpcProvider(
 
 export const pulseTestnetProvider = new StaticJsonRpcProvider(
   {
-    url: PULSE_TESTNET_NODE,
+    url: PULSE_MAINNET_NODE,
     skipFetchSetup: true,
   },
-  943,
+  369,
 )
 
 export const ethProvider = new StaticJsonRpcProvider(

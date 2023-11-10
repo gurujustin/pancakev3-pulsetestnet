@@ -5,7 +5,7 @@ import { ChainId } from '@pancakeswap/sdk'
 import { useMemo } from 'react'
 import { useNetwork } from 'wagmi'
 import { atom, useAtom } from 'jotai'
-import { SUPPORT_ONLY_PULSE_TESTNET } from 'config/constants/supportChains'
+import { SUPPORT_ONLY_PULSE_MAINNET } from 'config/constants/supportChains'
 import dynamic from 'next/dynamic'
 
 export const hideWrongNetworkModalAtom = atom(false)
@@ -22,7 +22,7 @@ const UnsupportedNetworkModal = dynamic(
   { ssr: false },
 )
 
-export const NetworkModal = ({ pageSupportedChains = SUPPORT_ONLY_PULSE_TESTNET }: { pageSupportedChains?: number[] }) => {
+export const NetworkModal = ({ pageSupportedChains = SUPPORT_ONLY_PULSE_MAINNET }: { pageSupportedChains?: number[] }) => {
   const { chainId, chain, isWrongNetwork } = useActiveWeb3React()
   const { chains } = useNetwork()
   const [dismissWrongNetwork, setDismissWrongNetwork] = useAtom(hideWrongNetworkModalAtom)

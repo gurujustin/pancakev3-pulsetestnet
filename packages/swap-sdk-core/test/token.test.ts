@@ -2,7 +2,7 @@ import { Token } from '../src'
 
 enum ChainId {
   ETHEREUM = 1,
-  PULSE_TESTNET = 943,
+  PULSE_MAINNET = 369,
   BSC = 56,
   BSC_TESTNET = 97,
 }

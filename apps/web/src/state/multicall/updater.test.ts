@@ -69,7 +69,7 @@ describe('multicall updater', () => {
               },
               def: {
                 2: 1,
-                943: 2,
+                369: 2,
               },
             },
           },

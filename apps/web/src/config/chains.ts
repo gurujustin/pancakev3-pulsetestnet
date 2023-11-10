@@ -5,31 +5,31 @@ import { bsc, bscTestnet, goerli, mainnet } from 'wagmi/chains'
 
 export const CHAIN_QUERY_NAME = {
   [ChainId.ETHEREUM]: 'eth',
-  [ChainId.PULSE_TESTNET]: 'pulsechainV4',
+  [ChainId.PULSE_MAINNET]: 'pulsechain',
   [ChainId.BSC]: 'bsc',
   [ChainId.BSC_TESTNET]: 'bscTestnet',
 } as const satisfies Record<ChainId, string>
 
 const pulseTestnet = {
-  id: 943,
-  network: 'pulsechainV4',
-  name: 'PulseChain V4',
-  testnet: true,
-  nativeCurrency: { name: 'V4 Pulse', symbol: 'v4PLS', decimals: 18 },
+  id: 369,
+  network: 'pulsechain',
+  name: 'PulseChain',
+  testnet: false,
+  nativeCurrency: { name: 'Pulse', symbol: 'PLS', decimals: 18 },
   rpcUrls: {
     default: {
-      http: ['https://rpc.v4.testnet.pulsechain.com'],
-      webSocket: ['wss://ws.v4.testnet.pulsechain.com'],
+      http: ['https://rpc.pulsechain.com'],
+      webSocket: ['wss://ws.pulsechain.com'],
     },
     public: {
-      http: ['https://rpc.v4.testnet.pulsechain.com'],
-      webSocket: ['wss://ws.v4.testnet.pulsechain.com'],
+      http: ['https://rpc.pulsechain.com'],
+      webSocket: ['wss://ws.pulsechain.com'],
     },
   },
   blockExplorers: {
     default: {
       name: 'PulseScan',
-      url: 'https://scan.v4.testnet.pulsechain.com',
+      url: 'https://scan.pulsechain.com',
     },
   },
   contracts: {
@@ -37,7 +37,7 @@ const pulseTestnet = {
       address: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e',
     },
     multicall3: {
-      address: '0x4c5936F34BA40B40B461236d315992e6D118E042',
+      address: '0xca11bde05977b3631167028862be2a173976ca11',
       blockCreated: 14353601,
     },
   },

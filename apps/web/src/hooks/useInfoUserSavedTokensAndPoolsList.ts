@@ -13,7 +13,7 @@ const defaultTokenAndPoolList: TokenAndPoolList = {
     tokens: [],
     pools: [],
   },
-  [ChainId.PULSE_TESTNET]: {
+  [ChainId.PULSE_MAINNET]: {
     tokens: [],
     pools: [],
   },

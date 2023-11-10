@@ -43,7 +43,7 @@ const LiquidStakingStakePage = () => {
 
   const masterChefAddress = masterChefV3Addresses[chainId]
 
-  const ethToken = [ChainId.ETHEREUM, ChainId.PULSE_TESTNET].includes(chainId) ? NATIVE[chainId] : WETH9[chainId]
+  const ethToken = [ChainId.ETHEREUM, ChainId.PULSE_MAINNET].includes(chainId) ? NATIVE[chainId] : WETH9[chainId]
 
   const inputCurrency = useCurrency(ethToken?.address || ethToken?.symbol)
 
@@ -112,7 +112,7 @@ const LiquidStakingStakePage = () => {
     if (!convertedStakeAmount || !account) return
 
     const receipt = await fetchWithCatchTxError(() => {
-      if ([ChainId.ETHEREUM, ChainId.PULSE_TESTNET].includes(chainId)) {
+      if ([ChainId.ETHEREUM, ChainId.PULSE_MAINNET].includes(chainId)) {
         const methodArgs = [account]
         return callWithGasPrice(wbethContract, 'deposit', methodArgs, {
           // gasLimit: calculateGasMargin(estimatedGas),

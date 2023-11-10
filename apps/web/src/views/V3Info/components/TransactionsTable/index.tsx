@@ -104,7 +104,6 @@ const DataRow = ({ transaction }: { transaction: Transaction; color?: string }) 
     <ResponsiveGrid>
       <LinkExternal
         href={getEtherscanLink(multiChainId[chainName], transaction.hash, 'transaction')}
-        isBscScan={chainName === 'BSC'}
       >
         <Text fontWeight={400}>
           {transaction.type === TransactionType.MINT
@@ -124,7 +123,6 @@ const DataRow = ({ transaction }: { transaction: Transaction; color?: string }) 
       <Text fontWeight={400}>
         <LinkExternal
           href={getEtherscanLink(multiChainId[chainName], transaction.sender, 'address')}
-          isBscScan={chainName === 'BSC'}
         >
           {shortenAddress(transaction.sender)}
         </LinkExternal>
